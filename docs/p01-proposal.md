@@ -1,25 +1,15 @@
 # Title of your Project: Project Proposal 
 
-**TODO**: Edit this file. Your project proposal goes here.
+### Code name: 
+Seattle Homelessness
 
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically: 
+#### Authors: 
+Brennon Lee (blee21@uw.edu), Rayna Ojas, and Trevor Wong
 
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
+#### Affiliation: 
+INFO-201: Technical Foundations of Informatics - The Information School - University of Washington 
 
-## Code name
-Give your project a code name, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: Jazz-4, Rocking Fish, etc.
-
-## Project title
-Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.)
-
-## Authors
-Names of your team members and contact information (UW email addresses).
-
-## Affiliation
-INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
-
-## Date
+#### Date: 
 Autumn 2022
 
 ## Abstract
@@ -55,3 +45,10 @@ Include your three or more research citations here. Also, include citations to y
 ## Appendix A: Questions
 Do you have questions for your TA or instructor? Include them here.
 
+
+**TODO**: Edit this file. Your project proposal goes here.
+
+For what to do, see the [`../instructions/`](../instructions/) directory, specifically: 
+
+* [Design Brief](../instructions/project-design-brief.pdf)
+* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
