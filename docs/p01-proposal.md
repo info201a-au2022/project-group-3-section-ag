@@ -1,7 +1,7 @@
 # Title of your Project: Project Proposal 
 
 ### Code name: 
-Seattle Homelessness
+American Homelessness
 
 #### Authors: 
 Brennon Lee (blee21@uw.edu), Rayna Ojas, and Trevor Wong
