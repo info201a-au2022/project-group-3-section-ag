@@ -7,7 +7,7 @@ as follows:
 
 |Report | Brief Description|
 |---------------| -----------------|
-|[Project Proposal (FIX ME!)](./xxx) | A brief description of your P1:Project Proposal
+|[Project Proposal (FIX ME!)](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/docs/p01-proposal.md) | A brief description of your P1:Project Proposal
 |[Exploratory Data Analysis](./xxx) | A brief description of your exploratory data analyis report
 |[Interactive Vizualizaiton](./xxx) | A brief description of your final report. 
 
