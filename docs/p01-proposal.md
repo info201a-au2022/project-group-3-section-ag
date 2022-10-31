@@ -13,18 +13,26 @@ INFO-201: Technical Foundations of Informatics - The Information School - Univer
 Autumn 2022
 
 ## Abstract
-Write a short abstract of three sentences. Your abstract should summarize your entire project, but only the very most important aspects. Here are two examples of how you might structure your abstract: (1) "Our main question is .... This question is important because .... To address the question, we will ...." and (2) "We are concerned with ..., because .... To address this concern, we plan to ...."
+Our main question is how does homelessness vary between states in America and why? This question is important because by analyzing the homelessness data between states, we can try to analyze a pattern between states with more homelessness vs less homelessness. If we are able to find some patterns, we can offer solutions or recommendations on how to hopefully reduce homelessness. 
 
 ## Keywords
-3-5 keywords that summarize your project. (e.g., "Keywords: human physiology; bicycle exercise; elderly; power and heart rate times-series data")
+
+    - Homelessness
+    - United States
+    - Poverty
+    - Shelter
+    - Housing
 
 ## Introduction
-Briefly introduce your project. (About 150 words.)
+
+Shelter and housing is something that may seem basic. You probably are fortunate enough to have a roof over your head and a bed to go to at the end of the day. However, across America, there are over 500 thousand people who aren't as fortunate and aren't able to have a roof over their head or a bed to sleep in. This causes many problems and challenges not only for those that are homeless, but also those around them.
+While you may think that someone being homeless is their own fault or their own choice, more often than not this isn't the case. There are many external reasons why someone may be facing homelessness including the lack of structural supports for those experiencing poverty, job loss that is out of their control, and inadequate help and discharge from people that are leaving hospitals, correctional, or mental health facilities.
 
 ## Problem Domain
 Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, reseach papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
 
 ## Research Questions
+How does homelessness vary between states in America and why?
 Present your 3-5 research questions. You should present each research question. For each research question, you should discuss why it is important and what motivates the question. (About 50 words for each question, so for four questions you would write about 200 words or more if needed.)
 
 ## The Dataset
