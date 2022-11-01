@@ -4,7 +4,7 @@
 American Homelessness
 
 #### Authors: 
-Brennon Lee (blee21@uw.edu), Rayna Ojas, and Trevor Wong
+Brennon Lee (blee21@uw.edu), Rayna Ojas (rayy727@uw.edu), and Trevor Wong (tjwong22@uw.edu)
 
 #### Affiliation: 
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington 
