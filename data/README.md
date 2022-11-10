@@ -5,8 +5,9 @@ In our project, we use the following data files and Application Programming Inte
 ## Data files (TODO: Update/delete for your PROJECT)
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
+|[DHS_Daily_Report.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/DHS_Daily_Report.csv) | This file contains the daily homelessness shelters.
+|[homelessness_2020.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | This file contains the homelessness counts per state in 2020.
+|[homelessness_change.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv) | This file contains the homelessness change in percentage from 2020 to a previous year.
 
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
