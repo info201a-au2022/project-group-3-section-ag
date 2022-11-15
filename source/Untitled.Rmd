@@ -1,0 +1,16 @@
+---
+title: "index.Rmd"
+author: "Rayna, Brennon, Trevor"
+date: "11/14/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("summary_info.r")
+source("Chart1_Homelessness_Trend.r")
+source("Chart2-Choropleth.r")
+source("Chart3-Pie.r")
+```
+
+# Dynamic Report

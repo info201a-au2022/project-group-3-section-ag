@@ -1,6 +1,6 @@
 library(dplyr)
 # sets directory to data folder
-setwd("~/info201/project-group-3-section-ag/data")
+#setwd("~/info201/project-group-3-section-ag/data")
 
 # adds the shelter data to variable to be used
 shelter_data <- read.csv("DHS_Daily_Report.csv")

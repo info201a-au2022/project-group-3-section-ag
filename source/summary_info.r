@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(stringr)
 
-setwd("~/Documents/info201/project-group-3-section-ag/data")
+# setwd("~/Documents/info201/project-group-3-section-ag/data")
 
 homelessness_data2020 <- read.csv("homelessness_2020.csv")
 homelessness_data2020$Overall.Homeless..2020 <- 
@@ -54,4 +54,4 @@ summary_info_DHS_Daily_Report$day_with_max_individuals <- DHS_Daily_Report %>%
   select(Date.of.Census)
 summary_info_DHS_Daily_Report$average_children_past_year <- DHS_Daily_Report %>%
   filter(str_detect(Date.of.Census, "2022")) %>%
-  summarise(avg_children = avg(Total.Children.in.Shelter))
+  summarise(avg_children = mean(DHS_Daily_Report$Total.Children.in.Shelter))
