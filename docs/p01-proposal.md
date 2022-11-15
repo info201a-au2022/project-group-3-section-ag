@@ -51,11 +51,9 @@ While you may think that someone being homeless is their own fault or their own 
 
 
 ## ***The Dataset***
-|Source Directories | Brief Description|
-|---------------| -----------------|
-|[Dataset 1]([https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv]) | A source file that creates a table of summary information to be included in your report
-|[Dataset 2]([https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv]) | A source file that creates a table of summary information to be included in your report
-|[Dataset 3]([[https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv)])
+|[Dataset 1](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | A source file that creates a table of summary information to be included in your report
+|[Dataset 2](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv) | A source file that creates a table of summary information to be included in your report
+|[Dataset 3](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | A source file that creates a table of summary information to be included in your report
 
 ## Expected Implications
 Homelessness is a big problem that impacts everyone. If we are able to address homelessness and find patterns that can explain why some areas have more homelessness than others, we can find solutions to these patterns to hopefully reduce homelessness as a whole. This can have implications on policymakers as they may have to enact new policies to clean up cities and enforce these solutions that more homelessness people can get the support they need. Technologists might be impacted as they might be able to create new technologies as solutions to the homelessness problem. Some states may have technology that allows them to better fight homelessness, and if they do, technologists will come into play to create more of these technologies for other areas. Designers may be implicated as they may be needed to develop and design areas that are visually appealing, safe, and welcoming to those that are homeless. A lot of resources that are available to homeless don't seem very safe or welcoming which discourages the homeless to get help. If there are designers that can make these places look better, the homeless might be more likely to seek help at these locations.
