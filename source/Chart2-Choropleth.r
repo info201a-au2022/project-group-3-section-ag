@@ -7,7 +7,7 @@ library(plotly)
 # setwd("~/info201/project-group-3-section-ag/data")
 
 # adds and filters numeric data
-homelessness_data2020 <- read.csv("homelessness_2020.csv")
+homelessness_data2020 <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_2020.csv")
 homeless_summary2020 <- select(homelessness_data2020,
                                State, Overall.Homeless..2020)
 stringAsFactors = FALSE

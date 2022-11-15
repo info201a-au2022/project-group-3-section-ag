@@ -3,9 +3,9 @@ library(dplyr)
 library(ggplot2)
 library(stringr)
 
-# setwd("~/Documents/info201/project-group-3-section-ag/data")
+# setwd("~/data")
 
-homelessness_data2020 <- read.csv("homelessness_2020.csv")
+homelessness_data2020 <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_2020.csv")
 homelessness_data2020$Overall.Homeless..2020 <- 
   as.numeric(gsub(",", "", homelessness_data2020$Overall.Homeless..2020))
 homelessness_data2020$Overall.Homeless...Male..2020 <- 
@@ -13,11 +13,11 @@ homelessness_data2020$Overall.Homeless...Male..2020 <-
 homelessness_data2020$Overall.Homeless...Female..2020 <- 
   as.numeric(gsub(",", "", homelessness_data2020$Overall.Homeless...Female..2020))
 
-MSA_Homeless_Population <- read.csv("2018 MSA Homeless Population.csv")
+MSA_Homeless_Population <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/2018 MSA Homeless Population.csv")
 MSA_Homeless_Population[c('Area', 'State')] <- str_split_fixed(MSA_Homeless_Population$Metropolitan.Statistical.Area, ', ', 2)
 # MSA_Homeless_Population[c('State1', 'State2','State3','State4')] <- str_split_fixed(MSA_Homeless_Population$State, '-', 4)
 
-DHS_Daily_Report <- read.csv("DHS_Daily_Report.csv")
+DHS_Daily_Report <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/DHS_Daily_Report.csv")
 
 summary_info_homelessness_2020 <- list()
 summary_info_homelessness_2020$num_observations <- nrow(homelessness_data2020)

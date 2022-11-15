@@ -4,8 +4,8 @@
 #----------------------------------------------------------------------------#
 library(tidyverse)
 
-homelessness_totals <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ag/main/data/homelessness_2020.csv")
-homelessness_change <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ag/main/data/homelessness_change.csv")
+homelessness_totals <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_2020.csv")
+homelessness_change <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_change.csv")
 
 View(homelessness_totals)
 View(homelessness_change)
