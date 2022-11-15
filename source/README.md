@@ -5,7 +5,7 @@ these sub-directories (TODO: Update/Delete)
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
+|[Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table) | A source file that creates a table of summary information to be included in your report
 |[xxx](./xxx) | Description ... 
 
 
