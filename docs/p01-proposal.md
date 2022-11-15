@@ -51,11 +51,13 @@ While you may think that someone being homeless is their own fault or their own 
 
 
 ## ***The Dataset***
-|Datasets | Brief Description|
-|---------------| -----------------|
-|[Dataset 1](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | A data set that has homelessness counts for 2020 in each state.
-|[Dataset 2](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv) | A data set that has the percent change in homelessness since 2020.
-|[Dataset 3](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/DHS_Daily_Report.csv) | A data set that has details about number of people in homeless shelters.
+|Data file name | Purpose|number of observations|number of variables|citation|
+|-----| -----------------| ----------|------------|-----------|
+|[homelessness_2020.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | A data set that has homelessness counts for 2020 in each state to give us data on the number of homeless. | 58 | 541 | Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/
+|[homelessness_change.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv) | A data set that has the percent change in homelessness since 2020 so we can calculate the homeless counts for previous years. | 58 | 14 | “Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/.
+|[DHS_Daily_Report.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/DHS_Daily_Report.csv) | A data set that has details about number of people in homeless shelters to find out the ratio of those that are homeless but still getting help with shelters. | 3306 | 13 | https://catalog.data.gov/dataset/dhs-daily-report
+
+These data sets are important for our research questions as they will be able to tell us the distribution of homelessness in the states. For example, the first data set has the homelessness counts for each state which will explicitly tell us the differing homelessness counts in each state. The second and third questions will be answered not explicitly through the datasets, but by looking at the data and doing extra external research, we can come to conclusions that can help us answer the questions.
 
 ## Expected Implications
 Homelessness is a big problem that impacts everyone. If we are able to address homelessness and find patterns that can explain why some areas have more homelessness than others, we can find solutions to these patterns to hopefully reduce homelessness as a whole. This can have implications on policymakers as they may have to enact new policies to clean up cities and enforce these solutions that more homelessness people can get the support they need. Technologists might be impacted as they might be able to create new technologies as solutions to the homelessness problem. Some states may have technology that allows them to better fight homelessness, and if they do, technologists will come into play to create more of these technologies for other areas. Designers may be implicated as they may be needed to develop and design areas that are visually appealing, safe, and welcoming to those that are homeless. A lot of resources that are available to homeless don't seem very safe or welcoming which discourages the homeless to get help. If there are designers that can make these places look better, the homeless might be more likely to seek help at these locations.
@@ -68,15 +70,15 @@ Is there anyone you would like to thank? A librarian who helped you with your re
 
 ## References
 ```
-“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/. 
+Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
+
+“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. 
 
 “Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/. 
 
 “State of Homelessness: 2022 Edition.” National Alliance to End Homelessness, 27 Sept. 2022, https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/. 
 
-“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. Adekom. 
-
-Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
+“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/. 
 ```
 
 ## Appendix A: Questions
