@@ -1,6 +1,7 @@
 library(dplyr)
 library(ggplot2)
 library(stringr)
+library(plotly)
 # directory has to have project inside "info201" folder
 setwd("~/info201/project-group-3-section-ag/data")
 
@@ -32,4 +33,7 @@ us_homeless_graph <- ggplot(us_homeless_summary2020, aes(long, lat, group=group,
 
 # print graph
 us_homeless_graph
+# alternatively, this works too (if we want it interactive)
+# ggplotly(us_homeless_graph)
+
 
