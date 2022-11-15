@@ -25,7 +25,7 @@ Our main question is how does homelessness vary between states in America and wh
 
 ## Introduction
 
-Shelter and housing is something that may seem basic. You probably are fortunate enough to have a roof over your head and a bed to go to at the end of the day. However, across America, there are over 500 thousand people who aren't as fortunate and aren't able to have a roof over their head or a bed to sleep in. This causes many problems and challenges not only for those that are homeless, but also those around them.
+Shelter and housing is something that may seem basic. You probably are fortunate enough to have a roof over your head and a bed to go to at the end of the day. However, across America, there are over half a million people who aren't as fortunate and aren't able to have a roof over their head or a bed to sleep in. This causes many problems and challenges not only for those that are homeless, but also those around them.
 While you may think that someone being homeless is their own fault or their own choice, more often than not this isn't the case. There are many external reasons why someone may be facing homelessness including the lack of structural supports for those experiencing poverty, job loss that is out of their control, and inadequate help and discharge from people that are leaving hospitals, correctional, or mental health facilities.
 
 ## Problem Domain
@@ -76,6 +76,8 @@ Is there anyone you would like to thank? A librarian who helped you with your re
 “What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-        homelessness/. 
 “Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/. 
 “State of Homelessness: 2022 Edition.” National Alliance to End Homelessness, 27 Sept. 2022, https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/. 
+“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. 
+Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
 
 ## Appendix A: Questions
 Do you have questions for your TA or instructor? Include them here.
