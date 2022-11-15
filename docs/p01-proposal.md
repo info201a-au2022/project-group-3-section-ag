@@ -50,7 +50,7 @@ While you may think that someone being homeless is their own fault or their own 
 > We see homelessness on the streets of Seattle since we live/learn in the area, but how has this changed over time? Using a dataset describing the status of homelessness through 1998-2020, we want to analyze it to understand the trends over different spans of time that affected homelessness. Through understanding, we can find what efforts may be more effective and which methods may be ineffective.
 
 
-## ***The Dataset***
+## The Dataset
 |Data file name | Purpose|number of observations|number of variables|citation|
 |-----| -----------------| ----------|------------|-----------|
 |[homelessness_2020.csv](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv) | A data set that has homelessness counts for 2020 in each state to give us data on the number of homeless. | 58 | 541 | Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/
@@ -70,15 +70,21 @@ Is there anyone you would like to thank? A librarian who helped you with your re
 
 ## References
 ```
-Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
+“Addressing Homelessness.” Addressing Homelessness - Human Services, https://www.seattle.gov/human-services/reports-and-data/addressing-homelessness#:~:text=Who%20is%20experiencing%20homelessness%20in,compared%20to%20the%202019%20Count.
 
-“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. 
+Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv.
 
-“Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/. 
+“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report.
 
-“State of Homelessness: 2022 Edition.” National Alliance to End Homelessness, 27 Sept. 2022, https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/. 
+“Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/.
 
-“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/. 
+Rivera, Paul. “Seattle Homeless Encampment near I-5 Cleared through Gov. Inslee's Initiative.” KOMO, KOMO, 31 Oct. 2022, https://komonews.com/news/local/seattle-homeless-encampment-cleared-through-governor-inslees-initiative.
+
+“State of Homelessness: 2022 Edition.” National Alliance to End Homelessness, 27 Sept. 2022, https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/.
+
+Stonestreet, John, and Kasey Leander. “Homelessness in America: Why Many Solutions Fail.” Breakpoint, 11 Oct. 2022, https://breakpoint.org/homelessness-in-america-why-many-solutions-fail/.
+
+“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/.
 ```
 
 
