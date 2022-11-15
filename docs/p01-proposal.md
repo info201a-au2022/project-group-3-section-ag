@@ -68,16 +68,15 @@ Is there anyone you would like to thank? A librarian who helped you with your re
 
 ## References
 ```
-“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-        homelessness/. 
+“What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/. 
 
 “Pit and HIC Data since 2007.” HUD Exchange, https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/. 
 
 “State of Homelessness: 2022 Edition.” National Alliance to End Homelessness, 27 Sept. 2022, https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/. 
 
-“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. 
-Adekom. 
+“DHS Daily Report.” Catalog, Publisher Data.cityofnewyork.us, 11 Nov. 2022, https://catalog.data.gov/dataset/dhs-daily-report. Adekom. 
 
-“Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
+Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master · Adekom/Metropolitan-Homelessness.” GitHub, 7 Dec. 2019, https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv. 
 ```
 
 ## Appendix A: Questions
