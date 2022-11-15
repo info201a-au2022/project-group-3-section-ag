@@ -7,8 +7,8 @@ library(tidyverse)
 homelessness_totals <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_2020.csv")
 homelessness_change <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_change.csv")
 
-View(homelessness_totals)
-View(homelessness_change)
+#View(homelessness_totals)
+#View(homelessness_change)
 
 homelessness <- homelessness_totals %>%
   group_by(State) %>%

@@ -81,13 +81,5 @@ Adekom. “Metropolitan-Homelessness/2018 MSA Homeless Population.csv at Master 
 “What Causes Homelessness?” National Alliance to End Homelessness, 3 June 2020, https://endhomelessness.org/homelessness-in-america/what-causes-homelessness/. 
 ```
 
-## Appendix A: Questions
-Do you have questions for your TA or instructor? Include them here.
 
 
-**TODO**: Edit this file. Your project proposal goes here.
-
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically: 
-
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)

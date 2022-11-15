@@ -1,6 +1,6 @@
 ---
-title: "index.Rmd"
-author: "Rayna, Brennon, Trevor"
+title: "Exploratory Analysis "
+author: "Brennon Lee (blee21@uw.edu), Rayna Ojas (rayy727@uw.edu), and Trevor Wong (tjwong22@uw.edu)"
 date: "11/14/2022"
 output: html_document
 ---
@@ -14,11 +14,58 @@ source("../source/Chart3-Pie.r")
 source("../source/Table.r")
 ```
 
-# Dynamic Report
+## Dynamic Report
 
-# Charts
-## Chart 1
-## Chart 2
-## Chart 3
+Having decided to do our research on Homelessness across the United States of America, we decided to look at three data sets. By looking at these data sets we were able to further understand the distribution of homelessness across the nation. This in turn could help us answer our Research questions: 
 
-# Table
+  1. How does homelessness vary between states in America and why?
+  2. What factors may contribute to the volume of homelessness in a city?
+  3. In Seattle, how has the homelessness issue changed over the years? Have services offered over the years led to a change in the numbers?
+
+### DHS Daily Report
+
+The first data set we decided to look at was the DHS Daily Report. This data set included the daily count of the number of homeless people staying at shelters over `r prettyNum(summary_info_DHS_Daily_Report$num_days_of_observations, big.mark = ",", scientific = FALSE)` days. Through further analysis we were able to find the most recent number of homeless individuals who had checked into shelters located across the nation to be `r prettyNum(summary_info_DHS_Daily_Report$individuals_in_shelters_most_recent_date, big.mark = ",", scientific = FALSE)` people. We also recognized that simply looking at the number of individuals in the shelter on the last day of the year would not be an accurate understanding of the information, so we also decided to find the average number of indiviudals in shelters in the year 2022. We found the average number of indivuals in shelters in the year 2022 to be `r prettyNum(summary_info_DHS_Daily_Report$average_individuals_past_year, big.mark = ",", scientific = FALSE)` people. It was also important for us to recognize the date that had the most homeless individuals in the shelter. We found this date to be `r summary_info_DHS_Daily_Report$day_with_max_individuals`. Last but not least, we thought that it was interesting that this data set also included information on the number of homeless children. Thus, we looked at again this past year (2022), and found there to be an average of `r prettyNum(summary_info_DHS_Daily_Report$average_children_past_year, big.mark = ",", scientific = FALSE)` children in the shelters across the nation. 
+
+### MSA Homeless Population
+
+The second data set that we decided to look at was the MSA Homeless Population. This data set included `r summary_info_MSA_Homeless_Population$num_observations` records of the number of Homeless people in each Metropolitan Statistical Area. This information enabled us to look deeper into specific areas within each area. We found that the area with the most homeless individuals was `r summary_info_MSA_Homeless_Population$max_area_with_homelessness`. On the opposite end, the are with the least number of homeless individuals was `r summary_info_MSA_Homeless_Population$min_area_with_homelessness`. We decided to also look into the state of Washington. Within Washington we found the total number of homeless individuals to be `r prettyNum(summary_info_MSA_Homeless_Population$sum_WAarea_with_homlessness, big.mark = ",", scientific = FALSE)`. The area within Washington with the highest number of homeless individuals was found to be `r summary_info_MSA_Homeless_Population$max_WAarea_with_homelessness`.
+
+### Homelessness Data 2020
+
+The last data set that we decided to look at was the Homelessness Data 2020. This data included `r summary_info_homelessness_2020$num_observations` entries. Each row contained information about each state and the number of homeless individuals within each state. This data set also included further information about the age, sex, ethnicity, and sheltered status of the United State homeless population. We found that in the year 2020, the state with the most homeless individuals was `r summary_info_homelessness_2020$max_state_with_homelessness`. The total number of homeless individuals in the nation was found to be `r prettyNum(summary_info_homelessness_2020$sum_homelessness, big.mark = ",", scientific = FALSE)` people. We also wanted to utilize this data set to look into the Male and Females of the homelessness population from 2020. We found the total number of Males to be `r prettyNum(summary_info_homelessness_2020$sum_homelessness_Male, big.mark = ",", scientific = FALSE)` males. The Female count was `r prettyNum(summary_info_homelessness_2020$sum_homelessness_Female, big.mark = ",", scientific = FALSE)` females. 
+
+## Charts
+
+After looking at the data sets we decided to create a couple charts to better help us understand our information. 
+
+### Chart 1: Trend
+```{r, echo = FALSE}
+homelessness_trend
+```
+
+This trend line maps out the population of homeless individuals form the Homelessness Data 2020 data set, utilizing the changes in population. This data set was given in population count and by percentages. By utilizing both data sets we are able to see how homelessness decreased until 2016, at which point it started to increase. We can see that in 2020 the homeless population was starting to sharply increase once again.  
+
+### Chart 2: Choropleth
+```{r, echo = FALSE}
+us_homeless_graph
+```
+
+This chart shows us the homelessness population across the United States of America by each state. This chart also utilizes the Homelessness Data 2020 data set. Here we can see that California has the highest level of homelessness in the year 2020. 
+
+### Chart 3: Pie Chart
+```{r, echo = FALSE}
+pie(shelter2020_vector, labels = c("Total Single Adults",
+                                   "Total Individuals in Adult Families with Children",
+                                   "Individuals in Adult Families"))
+
+```
+
+This is a pie chart that utilizes the information found in the DHS Daily Report Data Set. From this, we can visually see the amount of Single Adults, Individuals in Adult Families, and Adult Families with Children. As can be seen, the Totals in Adult Families with Children make up the majority of the individual adults in shelters. 
+
+## Table: 
+```{r, echo = FALSE}
+library(knitr)
+kable(homelessness)
+```
+
+Last but not least, we complied a table that again uses the two data sets of Homelessness Data 2020(population count and percentage change). In this table we are able to see the population count of homeless individuals from the year 2020. Furthermore we have also included the percentage changes over year to help us better understand the general trends within each state. 
