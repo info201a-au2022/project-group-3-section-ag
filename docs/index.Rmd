@@ -7,11 +7,11 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-source("summary_info.r")
-source("Chart1_Homelessness_Trend.r")
-source("Chart2-Choropleth.r")
-source("Chart3-Pie.r")
-source("Table.r")
+source("../source/summary_info.r")
+source("../source/Chart1_Homelessness_Trend.r")
+source("../source/Chart2-Choropleth.r")
+source("../source/Chart3-Pie.r")
+source("../source/Table.r")
 ```
 
 # Dynamic Report
@@ -19,3 +19,6 @@ source("Table.r")
 # Charts
 ## Chart 1
 ## Chart 2
+## Chart 3
+
+# Table
