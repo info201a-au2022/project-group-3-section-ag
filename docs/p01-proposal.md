@@ -51,17 +51,11 @@ While you may think that someone being homeless is their own fault or their own 
 
 
 ## ***The Dataset***
-<<<<<<< HEAD
-
-=======
-https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/
-https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness/
-https://catalog.data.gov/dataset/dhs-daily-report
-https://catalog.data.gov/dataset/directory-of-homeless-population-by-yearhttps://catalog.data.gov/dataset/directory-of-homeless-population-by-year
-https://catalog.data.gov/dataset/directory-of-unsheltered-street-homeless-to-general-population-ratio-2011
-https://github.com/adekom/metropolitan-homelessness/blob/master/2018%20MSA%20Homeless%20Population.csv
->>>>>>> c91ed404b4c5a5cdcbf791fe39a04b3420957906
-(1) Describe how your dataset is related to your problem domain and, specifically, to your research qeustions. That is, how will your dataset enable you to answer your research questions? (2) Include a table that presents the name of each data file, the number of observations (rows), and the number of variables (columns). (3) Include a full citation to each data file, including URL. (4) Finally, describe the provenance of your dataset, addressing such key questions as: (a) Who collected the data? When? For what purpose? (b) How was the data collection effort funded? Who is likely to benefit from the data or make money? (c) How was the data validated and held secure? Is it credible and trustworthy? (d) How did you obtain the data? Do you credit the source of the data? (About 400 words.)
+|Source Directories | Brief Description|
+|---------------| -----------------|
+|[Dataset 1]([https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv]) | A source file that creates a table of summary information to be included in your report
+|[Dataset 2]([https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_change.csv]) | A source file that creates a table of summary information to be included in your report
+|[Dataset 3]([[https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/source/Table](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/data/homelessness_2020.csv)])
 
 ## Expected Implications
 Homelessness is a big problem that impacts everyone. If we are able to address homelessness and find patterns that can explain why some areas have more homelessness than others, we can find solutions to these patterns to hopefully reduce homelessness as a whole. This can have implications on policymakers as they may have to enact new policies to clean up cities and enforce these solutions that more homelessness people can get the support they need. Technologists might be impacted as they might be able to create new technologies as solutions to the homelessness problem. Some states may have technology that allows them to better fight homelessness, and if they do, technologists will come into play to create more of these technologies for other areas. Designers may be implicated as they may be needed to develop and design areas that are visually appealing, safe, and welcoming to those that are homeless. A lot of resources that are available to homeless don't seem very safe or welcoming which discourages the homeless to get help. If there are designers that can make these places look better, the homeless might be more likely to seek help at these locations.
