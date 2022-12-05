@@ -18,54 +18,46 @@ intro_main_content <- mainPanel (
   for those experiencing poverty, job loss that is out of their control, and inadequate help and 
   discharge from people that are leaving hospitals, correctional, or mental health facilities."),
   
-  p(strong("Questions"))
+  p(strong("Questions")),
   
-  p()
+  p(),
   
   p("For this project, we aim to investigate the homelessness rates and shelter rates across multiple
   areas in order to determine what factors may be leading to homelessness. We utilize five main datasets
   to pull data from regarding daily homelessness shelter counts, homelessness counts per state in 2020,
   homelessness change in percentage from 2020 to previous years, homelessness counts in major cities in 
   2018, and the homelessness representation ratio for major cities in 2018. Exploring this data is crucial
-  to determine patterns between homelessness and other factors that may be causing homelessness.
+  to determine patterns between homelessness and other factors that may be causing homelessness.")
 )
-
 intro_panel <- tabPanel(
   "Home",
   titlePanel("Home"),
   intro_main_content
 )
-
 ######### chart 1
-
 chart1_input <- selectInput(
   inputID = "inp_1",
   label = "Select A State",
   choice = c(unique(homelessness_trends["State"])),
   selected = "AK"
 )
-
 chart1_sidebar_content <- sidebarPanel(
   chart1_input,
   print("")
 )  
-
 chart1_main_content <- mainPanel(
   plotlyOutput("chart1")
 )
-
 chart1_panel <- tabPanel(
   "Homelessness Trends",
   titlePanel("Trends of homelesssness in each state"),
   sidebarLayout(
-    chart1_sidebar_content.
+    chart1_sidebar_content,
     chart1_main_content
   )
 )
-
 ui <- navbarPage(
   "National homelessness",
   intro_panel,
   chart1_panel
 )
-
