@@ -6,7 +6,7 @@ library(plotly)
 
 intro_main_content <- mainPanel (
   h1("Introduction"),
-  p(strong("By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
+  p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
   p(),
   p("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
   have a roof over your head and a bed to go to at the end of the day. However, across America, 
@@ -18,7 +18,9 @@ intro_main_content <- mainPanel (
   for those experiencing poverty, job loss that is out of their control, and inadequate help and 
   discharge from people that are leaving hospitals, correctional, or mental health facilities."),
   
-  p("Questions")
+  p(strong("Questions"))
+  
+  p()
   
   p("For this project, we aim to investigate the homelessness rates and shelter rates across multiple
   areas in order to determine what factors may be leading to homelessness. We utilize five main datasets
@@ -36,8 +38,34 @@ intro_panel <- tabPanel(
 
 ######### chart 1
 
+chart1_input <- selectInput(
+  inputID = "inp_1",
+  label = "Select A State",
+  choice = c(unique(homelessness_counts_2020["State"])),
+  selected = "AK"
+)
+
 chart1_sidebar_content <- sidebarPanel(
-  
+  chart1_input,
+  print("")
 )  
 
+chart1_main_content <- mainPanel(
+  plotlyOutput("chart1")
+)
+
+chart1_panel <- tabPanel(
+  "Homelessness Trends",
+  titlePanel("Trends of homelesssness in each state"),
+  sidebarLayout(
+    chart1_sidebar_content.
+    chart1_main_content
+  )
+)
+
+ui <- navbarPage(
+  "National homelessness",
+  intro_panel,
+  chart1_panel
+)
 
