@@ -1,15 +1,10 @@
 #Library
-library(shiny)
-library(ggplot2)
-library(dplyr)
-library(tidyverse)
-library(plotly)
-library(shinythemes)
+library("shiny")
 
 #Sources
-source("shiny_server.R")
-source("shiny_ui.R")
+source("app_server.R")
+source("app_ui.R")
 
 
-#COnnection
-shinyApp(server = shinyServer, ui = shinyUI)
+#Connection
+shinyApp(ui = ui, server = server)
