@@ -6,7 +6,7 @@ library(ggplot2)
 library(plotly)
 
 #Data frames for plot 1
-homelessness_trends <- read.csv('./data/homelessness_trends.csv', stringsAsFactors = FALSE)
+homelessness_trends <- read.csv('./data/Homelessness_trends.csv', stringsAsFactors = FALSE)
 
 server <- function(input, ouput) {
   ####### CHART 1
