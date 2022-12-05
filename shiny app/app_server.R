@@ -6,7 +6,7 @@ library(ggplot2)
 library(plotly)
 
 #Data frames for plot 1
-homelessness_trends <- read.csv('./data/Homelessness_trends.csv', stringsAsFactors = FALSE)
+homelessness_trends <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/Homelessness_trends.csv", stringsAsFactors = FALSE)
 
 server <- function(input, ouput) {
   ####### CHART 1
@@ -14,7 +14,7 @@ server <- function(input, ouput) {
     chart_1 <- ggplotly(ggplot(
       data = homelessness_trends %>%
         filter(State == input$inp_1),
-      mappint = aes_string(x = "Year", y = "Homeslessness_Count")) +
+      mappint = aes_string(x = "Year", y = "Homelessness_Count")) +
         geom_point() +
       labs(
         title = "Homeslessness Count by Year",
