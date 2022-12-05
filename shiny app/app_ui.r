@@ -17,6 +17,9 @@ intro_main_content <- mainPanel (
   external reasons why someone may be facing homelessness including the lack of structural supports 
   for those experiencing poverty, job loss that is out of their control, and inadequate help and 
   discharge from people that are leaving hospitals, correctional, or mental health facilities."),
+  
+  p("Questions")
+  
   p("For this project, we aim to investigate the homelessness rates and shelter rates across multiple
   areas in order to determine what factors may be leading to homelessness. We utilize five main datasets
   to pull data from regarding daily homelessness shelter counts, homelessness counts per state in 2020,
