@@ -41,7 +41,7 @@ intro_panel <- tabPanel(
 chart1_input <- selectInput(
   inputID = "inp_1",
   label = "Select A State",
-  choice = c(unique(homelessness_counts_2020["State"])),
+  choice = c(unique(homelessness_trends["State"])),
   selected = "AK"
 )
 
