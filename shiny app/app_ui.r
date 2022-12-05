@@ -56,8 +56,18 @@ chart_1_panel <- tabPanel(
     chart_1_main_content
   )
 )
+
+report_panel <- tabPanel(
+  "Report",
+  titlePanel("Report"),
+  mainPanel(
+    includeMarkdown('./docs/final_report')
+  )
+)
+
 ui <- navbarPage(
   "National homelessness",
   intro_panel,
-  chart_1_panel
+  chart_1_panel,
+  report_panel
 )
