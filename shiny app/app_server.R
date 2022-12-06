@@ -9,6 +9,7 @@ library(plotly)
 homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
 
 server <- function(input, ouput) {
+  source("app_ui.r")
   ####### CHART 1
   output$chart1 <- renderPlotly({
     chart_1 <- ggplotly(ggplot(
@@ -17,12 +18,12 @@ server <- function(input, ouput) {
       mappint = aes_string(x = "Year", y = "Homelessness_Count")) +
         geom_point() +
       labs(
-        title = "Homeslessness Count by Year",
+        title = "Homelessness Count by Year",
         x = "Year",
         y = "Homelessness Count"
       ) +
       xlim(2010, 2020)
     )
-    print(chart_1)
+    chart_1
   })
 }
