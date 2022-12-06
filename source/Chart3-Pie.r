@@ -3,7 +3,7 @@ library(dplyr)
 #setwd("~/info201/project-group-3-section-ag/data")
 
 # adds the shelter data to variable to be used
-shelter_data <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/DHS_Daily_Report.csv")
+shelter_data <- read.csv(file = "../data/DHS_Daily_Report.csv")
 
 # filters the shelter data to dates in 2020
 shelter_data$Date.of.Census <-

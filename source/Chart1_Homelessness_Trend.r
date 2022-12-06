@@ -3,8 +3,8 @@ library(ggplot2)
 library(tidyverse)
 
 # setwd("~/info201/project-group-3-section-ag/data")
-homelessness_totals <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_2020.csv")
-homelessness_change <- read.csv(file = "~/Documents/info201/project-group-3-section-ag/data/homelessness_change.csv")
+homelessness_totals <- read.csv(file = "../data/homelessness_2020.csv")
+homelessness_change <- read.csv(file = "../data/homelessness_change.csv")
 
 #View(homelessness_totals)
 #View(homelessness_change)
@@ -70,8 +70,8 @@ homelessness_trend <- ggplot() +
   geom_line(aes(x = Years, y = as.numeric(Total), group = 1)) +
   geom_point() +
   scale_x_continuous(breaks=seq(2010,2020,1)) +
-  scale_y_continuous(breaks=seq(500000,650000,25000))
-
-homelessness_trend + labs(title = "US Homelessness", 
-                          x = "Year", y = "Number of homeless", caption = "Homelessness over the past 10 years")
+  scale_y_continuous(breaks=seq(500000,650000,25000)) +
+  labs(title = "US Homelessness", 
+       x = "Year", y = "Number of homeless",
+       caption = "Homelessness over the past 10 years")
 homelessness_trend
