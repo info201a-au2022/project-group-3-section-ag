@@ -4,12 +4,12 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
+source("app_ui.r")
 
 #Data frames for plot 1
 homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
 
 server <- function(input, ouput) {
-  source("app_ui.r")
   ####### CHART 1
   output$chart1 <- renderPlotly({
     chart_1 <- ggplotly(ggplot(
