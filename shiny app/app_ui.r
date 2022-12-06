@@ -1,5 +1,9 @@
 # shiny_ui.r
 library(shiny)
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
 library(plotly)
 
 ######## INTRO
@@ -7,7 +11,7 @@ library(plotly)
 intro_main_content <- mainPanel (
   h1("Introduction"),
   p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
-  p(),
+
   p("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
   have a roof over your head and a bed to go to at the end of the day. However, across America, 
   there are over half a million people who aren't as fortunate and aren't able to have a 
@@ -18,22 +22,20 @@ intro_main_content <- mainPanel (
   for those experiencing poverty, job loss that is out of their control, and inadequate help and 
   discharge from people that are leaving hospitals, correctional, or mental health facilities."),
   
-  p(strong("Questions")),
-  
-  p(),
-  
   p("For this project, we aim to investigate the homelessness rates and shelter rates across multiple
   areas in order to determine what factors may be leading to homelessness. We utilize five main datasets
   to pull data from regarding daily homelessness shelter counts, homelessness counts per state in 2020,
   homelessness change in percentage from 2020 to previous years, homelessness counts in major cities in 
   2018, and the homelessness representation ratio for major cities in 2018. Exploring this data is crucial
-  to determine patterns between homelessness and other factors that may be causing homelessness."),
+  to determine patterns between homelessness and other factors that may be causing homelessness.")
 )
+
 intro_panel <- tabPanel(
   "Home",
   titlePanel("Home"),
   intro_main_content
 )
+
 ######### chart 1
 chart_1_input <- selectInput(
   inputId = "inp_1",
@@ -41,13 +43,16 @@ chart_1_input <- selectInput(
   choice = c(unique(homelessness_trends["State"])),
   selected = "AK"
 )
+
 chart_1_sidebar_content <- sidebarPanel(
   chart_1_input,
   print("")
-)  
+) 
+
 chart_1_main_content <- mainPanel(
   plotlyOutput("chart1")
 )
+
 chart_1_panel <- tabPanel(
   "Homelessness Trends",
   titlePanel("Trends of homelesssness in each state"),
@@ -61,7 +66,7 @@ report_panel <- tabPanel(
   "Report",
   titlePanel("Report"),
   mainPanel(
-    includeMarkdown('./docs/final_report')
+    includeMarkdown('../docs/final_report')
   )
 )
 
