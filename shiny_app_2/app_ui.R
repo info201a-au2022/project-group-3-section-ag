@@ -70,8 +70,8 @@ chart_1_panel <- tabPanel(
 
 ### Chart 2 ###
 chart_2_input <- sliderInput(inputId = "size_2", "State Homeless Population",
-                             min = 304, max = 161548,
-                             value = c(304, 161548))
+                             min = 541, max = 161548,
+                             value = c(541, 161548))
 
 chart_2_main_content <- mainPanel(
   plotlyOutput("chart2")
@@ -107,6 +107,7 @@ report_panel <- tabPanel(
 ui <- navbarPage(
   "National homelessness",
   intro_panel,
+  chart_1_panel,
   chart_2_panel,
   report_panel
 )
