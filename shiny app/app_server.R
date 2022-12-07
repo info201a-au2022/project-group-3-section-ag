@@ -17,12 +17,12 @@ server <- function(input, ouput) {
         filter(State == input$inp_1),
       mappint = aes_string(x = "Year", y = "Homelessness_Count")) +
         geom_point() +
-      labs(
-        title = "Homelessness Count by Year",
-        x = "Year",
-        y = "Homelessness Count"
-      ) +
-      xlim(2010, 2020)
+        labs(
+          title = "Homelessness Count by Year",
+          x = "Year",
+          y = "Homelessness Count"
+        ) +
+        xlim(2010, 2020)
     )
     chart_1
   })

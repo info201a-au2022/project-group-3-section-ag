@@ -6,6 +6,7 @@ library(tidyverse)
 library(ggplot2)
 library(plotly)
 
+homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
 ######## INTRO
 
 intro_main_content <- mainPanel (
@@ -66,7 +67,7 @@ report_panel <- tabPanel(
   "Report",
   titlePanel("Report"),
   mainPanel(
-    includeMarkdown('../docs/final_report')
+    includeMarkdown('../docs/final_report.md')
   )
 )
 
