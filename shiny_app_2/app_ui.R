@@ -19,6 +19,8 @@ intro_panel <- tabPanel(
     h1("Introduction"),
     p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
     
+    img(src='intro_image.png'),
+    
     p("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
   have a roof over your head and a bed to go to at the end of the day. However, across America, 
   there are over half a million people who aren't as fortunate and aren't able to have a 
