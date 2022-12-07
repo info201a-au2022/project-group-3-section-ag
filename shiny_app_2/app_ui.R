@@ -10,7 +10,7 @@ library(markdown)
 
 
 ######## INTRO
-homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
+homelessness_trends <- read.csv('/data/homelessness_trends.csv', stringsAsFactors = FALSE)
 
 
 intro_panel <- tabPanel(
