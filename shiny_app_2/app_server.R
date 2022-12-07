@@ -15,13 +15,13 @@ server <- function(input, output) {
   output$chart1 <- renderPlotly({
     data1 <- homelessness_trends %>%
       filter(State == input$inp_1) %>%
-      group_by(Year)
+      group_by(Year) 
+    data1$Homeless_Count <- as.numeric(data1$Homeless_Count)
     
     chart_1 <- data1 %>%
       ggplot(mapping = aes_string(x = "Year", y = "Homeless_Count")) +
       geom_line() +
       scale_x_continuous(breaks = seq(2010, 2020, 2)) +
-      scale_y_continuous(breaks = seq(0, 500000, 50000)) +
       geom_point() +
       labs(
         title = "Homelessness Count by Year",
