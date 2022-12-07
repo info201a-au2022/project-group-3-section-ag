@@ -5,10 +5,10 @@ library(tidyverse)
 library(ggplot2)
 library(plotly)
 library(rsconnect)
-source("app_ui.r")
+source("app_ui.R")
 
 #Data frames for plot 1
-homelessness_trends <- read.csv('/data/homelessness_trends.csv', stringsAsFactors = FALSE)
+homelessness_trends <- read.csv('homelessness_trends.csv')
 
 server <- function(input, output) {
   ####### CHART 1
@@ -22,11 +22,10 @@ server <- function(input, output) {
       geom_point() +
       xlim(2010, 2020) +
       labs(
-      title = "Homelessness Count by Year",
-      x = "Year",
-      y = "Homelessness Count"
+        title = "Homelessness Count by Year",
+        x = "Year",
+        y = "Homelessness Count"
       ) 
     print(ggplotly(chart_1))
   })
 }
-

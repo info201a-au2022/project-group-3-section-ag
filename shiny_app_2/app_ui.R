@@ -10,7 +10,7 @@ library(markdown)
 
 
 ######## INTRO
-homelessness_trends <- read.csv('/data/homelessness_trends.csv', stringsAsFactors = FALSE)
+homelessness_trends <- read.csv('homelessness_trends.csv')
 
 
 intro_panel <- tabPanel(
@@ -66,7 +66,7 @@ report_panel <- tabPanel(
   "Report",
   titlePanel("Report"),
   mainPanel(
-    includeMarkdown('../docs/final_report.md')
+    includeMarkdown('final_report.md')
   )
 )
 
@@ -76,4 +76,3 @@ ui <- navbarPage(
   chart_1_panel,
   report_panel
 )
-
