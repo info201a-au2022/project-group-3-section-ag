@@ -5,6 +5,7 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
+library(markdown)
 
 #Sources
 source("app_server.R")

@@ -4,6 +4,7 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
+library(markdown)
 source("app_ui.r")
 
 #Data frames for plot 1
@@ -15,7 +16,7 @@ server <- function(input, ouput) {
     chart_1 <- ggplotly(ggplot(
       data = homelessness_trends %>%
         filter(State == input$inp_1),
-      mappint = aes_string(x = "Year", y = "Homelessness_Count")) +
+      mappint = aes_string(x = "Year", y = "Homeless_Count")) +
         geom_point() +
         labs(
           title = "Homelessness Count by Year",

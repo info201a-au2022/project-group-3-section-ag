@@ -5,6 +5,7 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
+library(markdown)
 
 homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
 ######## INTRO
@@ -13,7 +14,7 @@ intro_main_content <- mainPanel (
   h1("Introduction"),
   p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
 
-  p("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
+  print("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
   have a roof over your head and a bed to go to at the end of the day. However, across America, 
   there are over half a million people who aren't as fortunate and aren't able to have a 
   roof over their head or a bed to sleep in. This causes many problems and challenges not only for 
