@@ -20,13 +20,14 @@ all_states <- map_data("state")
 all_states[["region"]] <- state.abb[match(str_to_title(all_states[["region"]]),
                                           state.name)]
 # for plot 3
+# ***ADD-DATAFRAMES-HERE***
 
 server <- function(input, output) {
   ### CHART 1 ###
   output$chart1 <- renderPlotly({
     data1 <- homelessness_trends %>%
       filter(State == input$inp_1) %>%
-      group_by(Year) 
+      group_by(Year)
     data1$Homeless_Count <- as.numeric(data1$Homeless_Count)
     
     chart_1 <- data1 %>%
@@ -47,6 +48,7 @@ server <- function(input, output) {
     filtered_homeless_summary2020 <- homeless_summary2020 %>%
       filter(Overall.Homeless..2020 >= input$size_2[1]) %>%
       filter(Overall.Homeless..2020 <= input$size_2[2])
+    # creates the choropleth map
     chart_2 <- ggplot(left_join(all_states,
                                 filtered_homeless_summary2020, 
                                 by=c("region"="State")),
@@ -57,7 +59,7 @@ server <- function(input, output) {
   })
   
   ### CHART 3 ###
-  # code here
+  # ***CODE-HERE***
 }
 
 
