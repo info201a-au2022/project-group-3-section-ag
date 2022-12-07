@@ -1,0 +1,13 @@
+name: Homelessness
+title: Homelessness
+username:
+account: brennonjlee
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7821562
+bundleId: 6599597
+url: https://brennonjlee.shinyapps.io/Homelessness/
+when: 1670341912.36954
+lastSyncTime: 1670341912.36955
+asMultiple: FALSE
+asStatic: FALSE
