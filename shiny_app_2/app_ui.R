@@ -9,7 +9,7 @@ library(rsconnect)
 library(markdown)
 
 
-######## INTRO
+### INTRO ###
 homelessness_trends <- read.csv('homelessness_trends.csv')
 
 intro_panel <- tabPanel(
@@ -45,7 +45,7 @@ intro_panel <- tabPanel(
   )
 )
 
-######### chart 1
+### Chart 1 ###
 chart_1_input <- selectInput(
   inputId = "inp_1",
   label = "Select A State",
@@ -68,6 +68,33 @@ chart_1_panel <- tabPanel(
   )
 )
 
+### Chart 2 ###
+chart_2_input <- sliderInput(inputId = "size_2", "State Homeless Population",
+                             min = 304, max = 161548,
+                             value = c(304, 161548))
+
+chart_2_main_content <- mainPanel(
+  plotlyOutput("chart2")
+)
+
+chart_2_sidebar_content <- sidebarPanel(
+  chart_2_input,
+  print("")
+)
+
+chart_2_panel <- tabPanel(
+  "Nationwide Homelessness",
+  titlePanel("Map of homelessness distribution across the nation in 2020"),
+  sidebarLayout(
+    chart_2_sidebar_content,
+    chart_2_main_content
+  )
+)
+
+### Chart 2 ###
+# code here
+
+### Report Tab ###
 report_panel <- tabPanel(
   "Report",
   titlePanel("Report"),
@@ -76,9 +103,11 @@ report_panel <- tabPanel(
   )
 )
 
+### UI Page ###
 ui <- navbarPage(
   "National homelessness",
   intro_panel,
   chart_1_panel,
+  chart_2_panel,
   report_panel
 )
