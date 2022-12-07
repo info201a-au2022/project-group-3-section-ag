@@ -19,7 +19,7 @@ intro_panel <- tabPanel(
     h1("Introduction"),
     p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
     
-    img(src='intro_image.png'),
+    img(src="intro_image.png", class = "intro"),
     
     p("Shelter and housing is something that may seem basic. You probably are fortunate enough to 
   have a roof over your head and a bed to go to at the end of the day. However, across America, 
@@ -36,7 +36,12 @@ intro_panel <- tabPanel(
   to pull data from regarding daily homelessness shelter counts, homelessness counts per state in 2020,
   homelessness change in percentage from 2020 to previous years, homelessness counts in major cities in 
   2018, and the homelessness representation ratio for major cities in 2018. Exploring this data is crucial
-  to determine patterns between homelessness and other factors that may be causing homelessness.")
+  to determine patterns between homelessness and other factors that may be causing homelessness."),
+  
+    p("The research questions we will be exploring are: How does homelessness vary between states in America and why? 
+  What factors may contribute to the volume of homelessness in a city? and In Seattle, how has the homelessness issue 
+  changed over the years? Have services offered over the years led to a change in the numbers? We address these 
+  questions in the tabs above. Please click on a tab to learn more about each topic.")
   )
 )
 
