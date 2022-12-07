@@ -4,6 +4,7 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(plotly)
+library(maps)
 library(rsconnect)
 source("app_ui.R")
 

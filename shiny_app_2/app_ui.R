@@ -7,6 +7,7 @@ library(ggplot2)
 library(plotly)
 library(rsconnect)
 library(markdown)
+library(maps)
 
 
 ### INTRO ###
