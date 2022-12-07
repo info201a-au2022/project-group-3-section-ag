@@ -1,0 +1,14 @@
+name: group3
+title: group3
+username:
+account: ronaguo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7835677
+bundleId: 6603418
+url: https://ronaguo.shinyapps.io/group3/
+when: 1670399537.23208
+lastSyncTime: 1670399537.23209
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: server.R|ui.R
