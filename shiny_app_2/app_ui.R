@@ -76,3 +76,4 @@ ui <- navbarPage(
   chart_1_panel,
   report_panel
 )
+

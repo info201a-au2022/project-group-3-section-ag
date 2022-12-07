@@ -10,7 +10,7 @@ source("app_ui.r")
 #Data frames for plot 1
 homelessness_trends <- read.csv('../data/homelessness_trends.csv', stringsAsFactors = FALSE)
 
-server <- function(input, ouput) {
+server <- function(input, output) {
   ####### CHART 1
   output$chart1 <- renderPlotly({
     data1 <- homelessness_trends %>%
@@ -29,3 +29,4 @@ server <- function(input, ouput) {
     print(ggplotly(chart_1))
   })
 }
+
