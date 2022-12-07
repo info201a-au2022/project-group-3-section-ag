@@ -39,7 +39,6 @@ server <- function(input, output) {
         x = "Year",
         y = "Homelessness Count"
       ) 
-    print(ggplotly(chart_1))
   })
   
   ### CHART 2 ###

@@ -107,7 +107,6 @@ report_panel <- tabPanel(
 ui <- navbarPage(
   "National homelessness",
   intro_panel,
-  chart_1_panel,
   chart_2_panel,
   report_panel
 )
