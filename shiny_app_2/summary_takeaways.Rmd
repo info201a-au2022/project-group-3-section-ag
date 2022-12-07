@@ -5,8 +5,8 @@ date: "2022-12-07"
 runtime: shiny
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 source("../source/Chart1_Homelessness_Trend.r")
 source("../source/Chart2-Choropleth.r")
 source("../source/Chart3-Pie.r")
