@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 
-####p(strong("Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas")),
+#### Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas
     
-image
+![Source: https://www.seattletimes.com/seattle-news/homeless/the-tension-over-visible-homelessness-since-in-the-pandemic-has-risen-in-seattle-and-the-country/](intro_image.png)
     
 Shelter and housing is something that may seem basic. You probably are fortunate enough to 
 have a roof over your head and a bed to go to at the end of the day. However, across America, 
