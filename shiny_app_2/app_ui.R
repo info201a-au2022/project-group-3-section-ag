@@ -57,13 +57,16 @@ chart_2_input <- sliderInput(inputId = "size_2", "State Homeless Population",
 
 # plot the graph on the main panel
 chart_2_main_content <- mainPanel(
-  plotlyOutput("chart2")
+  plotlyOutput("chart2"),
+  print("This second chart provides a visual with color demonstrating which states have a homeless population past a certain
+          number. The user can use the slider bar to slide the homeless population that they want and then the map will show 
+          which states are at that or above it. The color of the state will be darker blue if it is well over that number and will be 
+          lighter blue if it is closer to that color.")
 )
 
 # display the input slider on the sidebar panel
 chart_2_sidebar_content <- sidebarPanel(
   chart_2_input,
-  print("This second chart provides a visual with color that ")
 )
 
 # creates the page for "Nationwide Homelessness" tab
