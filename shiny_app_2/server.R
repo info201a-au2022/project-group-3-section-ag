@@ -18,7 +18,7 @@ library(rsconnect)
 # for plot 1
 homelessness_trends <- read.csv('homelessness_trends.csv')
 # for plot 2
-homelessness_data2020 <- read.csv(file = "../data/homelessness_2020.csv")
+homelessness_data2020 <- read.csv(file = 'homelessness_2020.csv')
 homeless_summary2020 <- select(homelessness_data2020,
                                State, Overall.Homeless..2020)
 homeless_summary2020$Overall.Homeless..2020 <- 
@@ -42,7 +42,7 @@ shinyServer(function(input, output) {
     chart_1 <- data1 %>%
       ggplot(mapping = aes_string(x = "Year", y = "Homeless_Count")) +
       geom_line() +
-      scale_x_continuous(breaks = seq(2010, 2020, 2)) +
+      scale_x_continuous(breaks = seq(2010, 2021, 2)) +
       geom_point() +
       labs(
         title = "Homelessness Count by Year",

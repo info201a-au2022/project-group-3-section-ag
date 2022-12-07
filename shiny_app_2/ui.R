@@ -96,8 +96,6 @@ summary_main_content <- mainPanel(
         takeaways we parted with by the end of the project."),
   print(" "),
   h3("Trends of Homelessness Populations Across the Nation (Choropleth Map)"),
-  plotlyOutput("Chart2-Choropleth.r"),
-  print(" "),
   print("The first research question we sought out was how does homelessness vary across states in the U.S. -- and we were 
   able to discover this answer through a map of the nation. This map of the U.S. highlights the states where homelessness 
   is more prominent and its clear to see that California is currently the state with the greatest number of people. This 
@@ -109,8 +107,6 @@ summary_main_content <- mainPanel(
   how geography or population density of a state can lead to a greater or lesser homelessness count."),
   print(" "),
   h3("Distribution of Status Among Homelessness Shelters (Pie Chart)"),
-  plotlyOutput("Chart3-Pie.r"),
-  print(" "),
   print("The second research question we sought out was what factors contribute to the volume of homelessness in a city? 
   Although the question was not explicitly answered, we managed to analyze one of the factors that have relevance to the 
   volume of homelessness and that is the distribution of status each individual in homelessness shelters hold. It is clear 
@@ -123,8 +119,6 @@ summary_main_content <- mainPanel(
   best interests."),
   print(" "),
   h3("Trend of Homelessness Across the Years (Line Chart)"),
-  plotlyOutput("Chart1_Homelessness_Trend.r"),
-  print(" "),
   print("The last research question we sought was how has the homelessness issue changed over the years? We solved this 
   question by analyzing the total number of homeless across years 2010-2020. With a 10 year window, we hoped to find a 
   fitting explanation to the question and we were not disappointed with the result. This graph is refined further to 

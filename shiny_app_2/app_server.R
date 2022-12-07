@@ -11,7 +11,7 @@ source("app_ui.R")
 # for plot 1
 homelessness_trends <- read.csv('homelessness_trends.csv')
 # for plot 2
-homelessness_data2020 <- read.csv(file = "../data/homelessness_2020.csv")
+homelessness_data2020 <- read.csv(file = 'homelessness_2020.csv')
 homeless_summary2020 <- select(homelessness_data2020,
                                State, Overall.Homeless..2020)
 homeless_summary2020$Overall.Homeless..2020 <- 
@@ -61,3 +61,4 @@ server <- function(input, output) {
   ### CHART 3 ###
   # ***CODE-HERE***
 }
+
