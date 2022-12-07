@@ -1,6 +1,4 @@
 #### Group 3 Section AG, By: Brennon Lee, Trevor Wong, and Rayna Ojas
-    
-![Source: https://www.seattletimes.com/seattle-news/homeless/the-tension-over-visible-homelessness-since-in-the-pandemic-has-risen-in-seattle-and-the-country/](./www/intro_image.png){#id .class width=50% height=50%}
 
 ### Problem
 
@@ -31,3 +29,5 @@ The research questions we will be exploring are: How does homelessness vary betw
 What factors may contribute to the volume of homelessness in a city? and In Seattle, how has the homelessness issue 
 changed over the years? Have services offered over the years led to a change in the numbers? We address these 
 questions in the tabs above. Please click on a tab to learn more about each topic.
+
+![Source: https://www.seattletimes.com/seattle-news/homeless/the-tension-over-visible-homelessness-since-in-the-pandemic-has-risen-in-seattle-and-the-country/](./www/intro_image.png)

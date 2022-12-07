@@ -33,7 +33,7 @@ server <- function(input, output) {
     chart_1 <- data1 %>%
       ggplot(mapping = aes_string(x = "Year", y = "Homeless_Count")) +
       geom_line() +
-      scale_x_continuous(breaks = seq(2010, 2020, 2)) +
+      scale_x_continuous(breaks = seq(2010, 2021, 2)) +
       geom_point() +
       labs(
         title = "Homelessness Count by Year",
