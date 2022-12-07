@@ -12,7 +12,6 @@ library(markdown)
 ######## INTRO
 homelessness_trends <- read.csv('homelessness_trends.csv')
 
-
 intro_panel <- tabPanel(
   "Home",
   titlePanel("Home"),
