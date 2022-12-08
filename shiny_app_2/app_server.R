@@ -21,7 +21,22 @@ all_states <- map_data("state")
 all_states[["region"]] <- state.abb[match(str_to_title(all_states[["region"]]),
                                           state.name)]
 # for plot 3
-# ***ADD-DATAFRAMES-HERE***
+shelter_data <- read.csv(file = "DHS_Daily_Report.csv")
+# function to adjust date format from "mm/dd/YYYY" to "YYYY-mm-dd"
+fix_dates <- function(date_in){
+  paste(substr(date_in, 7, 10), "-",
+        substr(date_in, 1, 2), "-",
+        substr(date_in, 4, 5), sep="")
+}
+shelter_data$Date.of.Census <- sapply(shelter_data$Date.of.Census, fix_dates)
+# function to find Z in heatmap
+add_Z <- function(x, y){
+  result <- shelter_data %>%
+    filter(Date.of.Census == y) %>%
+    pull(x)
+  return(result)
+}
+#### End of Helper Variables ####
 
 server <- function(input, output) {
   ### CHART 1 ###
@@ -56,10 +71,45 @@ server <- function(input, output) {
                       aes(long, lat,
                           group=group, fill=Overall.Homeless..2020)) +
       geom_polygon(color="grey") +
-      guides(fill=guide_legend(title="Homelessness Count"))
+      guides(guide_legend(title="Homelessness Count"))
   })
   
   ### CHART 3 ###
-  # ***CODE-HERE***
+  output$chart3 <- renderPlotly({
+    # selects proper columns based on dropdown
+    if(input$drop_3 == "Age Distributiion of Individuals in Shelter"){
+      selected_data <- c('Total.Adults.in.Shelter',
+                         'Total.Children.in.Shelter')
+    } else
+      if(input$drop_3 == "Status of Individuals in Shelter"){
+        selected_data <- c('Total.Single.Adults.in.Shelter',
+                           'Total.Individuals.in.Families.with.Children.in.Shelter',
+                           'Individuals.in.Adult.Families.in.Shelter')
+      } else
+        selected_data <- c('Total.Adults.in.Shelter',
+                           'Total.Children.in.Shelter')
+      # filters the data
+      filtered_shelter_data <- shelter_data %>%
+        select(Date.of.Census, selected_data) %>%
+        filter(Date.of.Census >= input$date_3[1]) %>%
+        filter(Date.of.Census <= input$date_3[2])
+      
+      # creates matrix for heatmap (by converting df)
+      heat_x <- selected_data
+      heat_y <- filtered_shelter_data$Date.of.Census
+      heat_data <- expand.grid(X=heat_x, Y=heat_y)
+      heat_data$Z <- mapply(add_Z, as.character(heat_data$X), as.character(heat_data$Y))
+      
+      # plot the heatmap
+      chart_3 <- ggplot(heat_data,
+                        aes(X, Y, fill = Z)) +
+        geom_tile() +
+        labs(
+          title = "Homeless Shelter Individuals by Date",
+          x = "Status of Sheltered Individuals",
+          y = "Date"
+        ) +
+        theme(axis.text.x=element_text(angle=5))
+  })
 }
 
