@@ -17,6 +17,7 @@ library(maps)
 library(rsconnect)
 library(markdown)
 
+homelessness_trends <- read.csv('homelessness_trends.csv')
 ### INTRO ###
 intro_panel <- tabPanel(
   "Introduction",
@@ -174,3 +175,4 @@ shinyUI <- navbarPage(
   summary_panel,
   report_panel
 )
+

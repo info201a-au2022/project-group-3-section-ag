@@ -17,7 +17,7 @@ library(rsconnect)
 library(markdown)
 library(maps)
 
-
+homelessness_trends <- read.csv('homelessness_trends.csv')
 ### INTRO ###
 intro_panel <- tabPanel(
   "Introduction",
