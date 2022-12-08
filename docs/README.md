@@ -11,10 +11,3 @@ as follows:
 |[Exploratory Data Analysis](https://github.com/info201a-au2022/project-group-3-section-ag/blob/main/docs/index.rmd) | This report analyzes more in depth the data sets that were used in the project proposal. Utilizing these datasets, this report includes charts, tables, and graphs that help to visualize the data.
 |[Interactive Vizualizaiton](https://brennonjlee.shinyapps.io/Homelessness/) | An interactive website that includes our final report and key findings.
 
-
-## DEVELOPER Note 2: IMPORTANT: Setting up your webserver 
-1. You must make your repository *public*. To make it public: Go to your GitHub repository > Settings (top-right) > Change visibility (Danger Zone) > Make Public
-1. You must set the pages source to /docs. To do so: Got your GitHub repository > Pages (bottom-left) > Select "/docs" from the pulldown menu
-1. If you run into trouble, pleaes ask your TA or post on Teams - as usual, it is straigthforward once you know how but can be tricky to figure out the first time.
-
-
