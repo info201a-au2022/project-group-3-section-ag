@@ -48,7 +48,7 @@ chart_1_panel <- tabPanel(
     mainPanel(
       plotlyOutput("chart1"),
       h3("Why this chart?"),
-      print("Homelessness varies between each state. Some state's homelessness has been increasing over time while others
+      p("Homelessness varies between each state. Some state's homelessness has been increasing over time while others
             have been decreasing. Utilizing this chart will allow us to look directly into each state to see if their
             homelessness has been increasing or decreasing. On the drop down menu, you can select a state and the line graph
             will change based on that state. It will show that state's homeless population over the past 10 years in a line chart.
@@ -71,10 +71,20 @@ chart_2_input <- sliderInput(inputId = "size_2", "State Homeless Population",
 chart_2_main_content <- mainPanel(
   plotlyOutput("chart2"),
   h3("Why this chart?"),
-  print("This second chart provides a visual with color demonstrating which states have a homeless population past a certain
-          number. The user can use the slider bar to slide the homeless population that they want and then the map will show 
-          which states are at that or above it. The color of the state will be darker blue if it is well over that number and will be 
-          lighter blue if it is closer to that color.")
+  p("This chart provides a visual with color of the distribution of
+  homelessness across the U.S. Although at first glance it is clear that
+  California has a value much higher than the rest, the graph is able to change
+  its parameters of allowed homeless populations by state through a slider bar.
+  This allows for users to view the homelessness data in a more informative
+  manner rather than noting that California has a large homeless population
+  while the rest of the nation has less. Regardless of which values are being
+  a visual understanding of the distribution of homelessness across the nation.
+  On top of that, the map is interactive so users can also see the homelessness
+  count for a given state in the year of 2020 by hovering over the state. We
+  found this interactive map informational as it highlights and depicts the
+  trends that are ongoing in the nation -- it shows how areas that are well
+  known for its population tend to have a homelessness population that
+  reflects that size.")
 )
 
 # display the input slider on the sidebar panel
@@ -93,8 +103,48 @@ chart_2_panel <- tabPanel(
 )
 
 ### Chart 3 ###
-# ***CODE-HERE***
+chart_3_input <- selectInput(
+  inputId = "drop_3",
+  label = "Select Shelter Data Focus",
+  choice = c("Age Distributiion of Individuals in Shelter",
+             "Status of Individuals in Shelter"),
+  selected = "Age Distributiion of Individuals in Shelter"
+)
+chart_3_yr_input <- dateRangeInput(
+  inputId = "date_3",
+  label = "Select a Range of Dates to Explore Homeless Shelter Distributions",
+  start = "2022-11-01", end = "2022-11-07",
+  min = "2013-08-21", max = "2022-11-07",
+  format = "yyyy-mm-dd",
+  startview = "year",
+  weekstart = 0, language = "en", separator = " to ", width = '50%'
+)
 
+chart_3_panel <- tabPanel(
+  "Homeless Shelter Distributions",
+  titlePanel("Homeless Shelters"),
+  sidebarLayout(
+    sidebarPanel(
+      chart_3_input,
+      chart_3_yr_input
+      ),
+    mainPanel(
+      plotlyOutput("chart3"),
+      h3("Why this chart?"),
+      p("This chart was made with the intent to show the varying difference in
+        homeless shelters over the span of given days, but the idea that there
+        wouldn't be a huge difference between each day kind of made it less
+        of a heat map and more of just a chart that shows a color distribution.
+        The heatmap does however describe the situation of people in homeless
+        shelters are in such as whether or not they have family or if they
+        are adults or children. Seeing that data visualized helps users see
+        the common trends that a person may experience and be at a higher risk
+        of homelessness (such as being in a family with children). With this in
+        mind, it can help determine ways to be wary of those at higher risk of
+        homelessness and possibly provide support.")
+    )
+  )
+)
 
 ### Summary Tab ###
 summary_panel <- tabPanel(
@@ -120,7 +170,7 @@ shinyUI <- navbarPage(
   intro_panel,
   chart_1_panel,
   chart_2_panel,
-  # chart_3_panel,
+  chart_3_panel,
   summary_panel,
   report_panel
 )
