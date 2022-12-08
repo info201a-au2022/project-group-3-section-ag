@@ -5,7 +5,8 @@
 # Find out more about building applications with Shiny here:
 #
 #    http://shiny.rstudio.com/
-#
+# libraries
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -16,8 +17,7 @@ library(maps)
 library(rsconnect)
 library(markdown)
 
-homelessness_trends <- read.csv('homelessness_trends.csv')
-
+### INTRO ###
 intro_panel <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),

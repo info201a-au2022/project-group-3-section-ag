@@ -1,4 +1,12 @@
-# shiny_ui.r
+#
+# This is the user-interface definition of a Shiny web application. You can
+# run the application by clicking 'Run App' above.
+#
+# Find out more about building applications with Shiny here:
+#
+#    http://shiny.rstudio.com/
+# libraries
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -11,8 +19,6 @@ library(maps)
 
 
 ### INTRO ###
-homelessness_trends <- read.csv('homelessness_trends.csv')
-
 intro_panel <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),

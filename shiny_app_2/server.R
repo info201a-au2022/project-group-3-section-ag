@@ -6,6 +6,8 @@
 #
 #    http://shiny.rstudio.com/
 #
+#libraries
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -45,15 +47,17 @@ add_Z <- function(x, y){
 }
 #### End of Helper Variables ####
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw charts
 shinyServer(function(input, output) {
   ### CHART 1 ###
   output$chart1 <- renderPlotly({
+    #filters data by the state input
     data1 <- homelessness_trends %>%
       filter(State == input$inp_1) %>%
       group_by(Year)
     data1$Homeless_Count <- as.numeric(data1$Homeless_Count)
     
+    #creates the line chart
     chart_1 <- data1 %>%
       ggplot(mapping = aes_string(x = "Year", y = "Homeless_Count")) +
       geom_line() +
